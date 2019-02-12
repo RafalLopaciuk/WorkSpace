@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="editScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="595.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.textEditorController">
+  <children>
+    <TextArea fx:id="documentContent" disable="false" editable="true" layoutX="0.0" layoutY="30.0" prefHeight="700.0" prefWidth="595.0" style="-fx-font-size:15;" wrapText="true" />
+    <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="595.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#openNewFile" text="Open new..." />
+            <MenuItem mnemonicParsing="false" onAction="#saveAsLastOpen" text="Save" />
+            <MenuItem mnemonicParsing="false" onAction="#saveAs" text="Save As..." />
+            <MenuItem mnemonicParsing="false" onAction="#quitEditor" text="Exit" fx:id="exitButton" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+</AnchorPane>
