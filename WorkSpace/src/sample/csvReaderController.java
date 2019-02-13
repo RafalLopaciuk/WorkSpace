@@ -53,7 +53,7 @@ public class csvReaderController {
             String[] firstList = line.split(cvsSplitBy);
             for(int i = 0; i < firstList.length; ++i){
                 tmp = firstList[i];
-                if( tmp.charAt(0) == '"') tmp = tmp.substring(1,tmp.length()-1);
+                if( tmp.charAt(0) == '"' || tmp.charAt(0) == ' ') tmp = tmp.substring(1,tmp.length()-1);
                 if( tmp.charAt(1) == '"') tmp = tmp.substring(2,tmp.length()-1);
                 if( tmp.charAt(tmp.length()-1) == '"') tmp = tmp.substring(0,tmp.length()-2);
                 firstList[i] = tmp;

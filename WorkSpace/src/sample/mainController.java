@@ -71,6 +71,10 @@ public class mainController {
         return ActualDirectory.getText();
     }
 
+
+    public void RefreshActual(){
+        UpdateRepositoryContent(new File(ActualDirectory.getText()));
+    }
     private void UpdateRepositoryContent(File path){
         if (path != null) {
             ContextMenu contextMenu = new ContextMenu();
@@ -95,8 +99,8 @@ public class mainController {
                     deleteScene.setScene(new Scene(root4, 400, 140));
                     deleteScene.setResizable(false);
                     deleteScene.setAlwaysOnTop(true);
-                    deleteScene.show();
-                    UpdateRepositoryContent(new File(ActualDirectory.getText()));
+                    deleteScene.showAndWait();
+                    RefreshActual();
                 }
             });
             contextMenu.getItems().add(deleteFile);
