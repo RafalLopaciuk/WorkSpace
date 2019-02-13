@@ -10,22 +10,23 @@
 <AnchorPane id="AnchorPane" fx:id="rootPane" disable="false" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="480.0" style="-fx-background-color:white;&#10;" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.mainController">
   <children>
     <TextField fx:id="ActualDirectory" disable="true" editable="false" layoutX="14.0" layoutY="53.0" onMouseClicked="#MouseClickedOnTree" opacity="0.5" prefHeight="25.0" prefWidth="452.0" style="-fx-font-style: italic&#10;" text="Select the path to your repository..." />
-    <Button layoutX="15.0" layoutY="14.0" minHeight="16.0" mnemonicParsing="false" onAction="#showFolderFiles" prefHeight="27.0" prefWidth="180.0" style="&#10;" text="Open repository" textAlignment="CENTER">
+    <Button fx:id="openRepButton" layoutX="15.0" layoutY="14.0" minHeight="-1.0" mnemonicParsing="false" onAction="#showFolderFiles" prefHeight="27.0" prefWidth="150.0" style="-fx-font-weight: bold; &#10;-fx-font-style: italic;&#10;" text="Open repository" textAlignment="CENTER">
       <font>
-        <Font name="System Bold Italic" size="13.0" />
+        <Font size="13.0" />
       </font>
     </Button>
-    <Button disable="false" layoutX="208.0" layoutY="14.0" minHeight="22.999908447265625" mnemonicParsing="false" onAction="#openEditor" prefHeight="27.0" prefWidth="144.0" text="Text editor" textAlignment="CENTER">
+    <Button disable="false" layoutX="179.0" layoutY="14.0" minHeight="-1.0" mnemonicParsing="false" onAction="#openEditor" prefHeight="27.0" prefWidth="105.0" text="Text editor" textAlignment="CENTER">
       <font>
         <Font name="System Italic" size="13.0" fx:id="x1" />
       </font>
     </Button>
     <ScrollPane fx:id="scrollPaneWithFolderContetnt" content="$null" disable="false" layoutX="14.0" layoutY="88.0" prefHeight="529.0" prefWidth="452.0" style="-fx-background-color:white;&#10;-fx-border-color:#F4F4F4 ;&#10;-fx-border-width: 1 ;" />
-    <Button font="$x1" layoutX="366.0" layoutY="14.0" mnemonicParsing="false" onAction="#endApplication" prefHeight="27.0" prefWidth="100.0" text="Quit" />
+    <Button font="$x1" layoutX="403.0" layoutY="14.0" mnemonicParsing="false" onAction="#endApplication" prefHeight="27.0" prefWidth="63.0" text="Quit" />
     <Text disable="false" fontSmoothingType="LCD" layoutX="379.0" layoutY="630.0" opacity="0.5" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="WorkSpace v1.00" textAlignment="CENTER">
       <font>
         <Font name="System Italic" size="10.0" />
       </font>
     </Text>
+    <Button font="$x1" layoutX="284.0" layoutY="14.0" mnemonicParsing="false" onAction="#openCsvReader" prefHeight="27.0" prefWidth="105.0" text="Csv Reader" />
   </children>
 </AnchorPane>

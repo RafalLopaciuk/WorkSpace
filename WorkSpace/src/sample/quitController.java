@@ -19,5 +19,6 @@ public class quitController {
 
     public  void endOfApplication(ActionEvent event) throws IOException {
         Platform.exit();
+        System.exit(0);
     }
 }

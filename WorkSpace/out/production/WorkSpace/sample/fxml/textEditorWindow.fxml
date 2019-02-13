@@ -8,7 +8,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="editScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="595.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.textEditorController">
   <children>
-    <TextArea fx:id="documentContent" disable="false" editable="true" layoutX="0.0" layoutY="30.0" prefHeight="700.0" prefWidth="595.0" style="-fx-font-size:15;" wrapText="true" />
+    <TextArea fx:id="documentContent" disable="false" editable="true" layoutX="0.0" layoutY="30.0" prefHeight="699.9999000000025" prefWidth="595.0" style="-fx-font-size:15;" wrapText="true" />
     <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="595.0">
       <menus>
         <Menu mnemonicParsing="false" text="File">
